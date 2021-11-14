@@ -1,4 +1,4 @@
-## Primitive Hooks
+## Hooks
 - `useState`
 - `useReducer`
 - `useRef`
