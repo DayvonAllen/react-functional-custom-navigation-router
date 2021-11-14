@@ -10,6 +10,7 @@ const Link = ({ className, href, children }) => {
     // change URl without doing a full page refresh
     window.history.pushState({}, "", href);
 
+    // tells route components that the navigation has just changed
     const navEvent = new PopStateEvent("popstate");
     window.dispatchEvent(navEvent);
   };
