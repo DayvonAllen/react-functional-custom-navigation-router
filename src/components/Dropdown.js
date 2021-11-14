@@ -6,6 +6,7 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
 
   useEffect(() => {
     const onBodyClick = (event) => {
+      // checks if click element is inside of this element
       if (ref.current.contains(event.target)) {
         return;
       }
